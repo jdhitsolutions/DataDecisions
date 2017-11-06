@@ -1,0 +1,6 @@
+*.pptx
+*.bak
+dev*
+*.tmp
+~*
+scratch*

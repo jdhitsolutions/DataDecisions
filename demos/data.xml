@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Objects>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">100</Property>
+    <Property Name="Event" Type="System.String">Mini brakes</Property>
+    <Property Name="Comment" Type="System.String">Dunn</Property>
+    <Property Name="Date" Type="System.DateTime">8/17/2017 7:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">101</Property>
+    <Property Name="Event" Type="System.String">Columbus Day</Property>
+    <Property Name="Comment" Type="System.String">no school</Property>
+    <Property Name="Date" Type="System.DateTime">10/9/2017 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">102</Property>
+    <Property Name="Event" Type="System.String">PSTweetChat</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/3/2017 1:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">103</Property>
+    <Property Name="Event" Type="System.String">Lion King</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/4/2017 2:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">104</Property>
+    <Property Name="Event" Type="System.String">Haircut</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/10/2017 10:30:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">105</Property>
+    <Property Name="Event" Type="System.String">Eye checkup</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/12/2017 9:40:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">106</Property>
+    <Property Name="Event" Type="System.String">Tire change</Property>
+    <Property Name="Comment" Type="System.String">van</Property>
+    <Property Name="Date" Type="System.DateTime">11/13/2017 2:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">107</Property>
+    <Property Name="Event" Type="System.String">MVP Registration Opens</Property>
+    <Property Name="Comment" Type="System.String">http://www.mvpsummit18.com</Property>
+    <Property Name="Date" Type="System.DateTime">11/6/2017 11:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">108</Property>
+    <Property Name="Event" Type="System.String">Techmentor</Property>
+    <Property Name="Comment" Type="System.String">Orlando</Property>
+    <Property Name="Date" Type="System.DateTime">11/15/2017 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">109</Property>
+    <Property Name="Event" Type="System.String">Wine Tasting Party</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/18/2017 6:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">110</Property>
+    <Property Name="Event" Type="System.String">Cirque de Soleil</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">11/19/2017 1:30:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">111</Property>
+    <Property Name="Event" Type="System.String">Thanksgiving</Property>
+    <Property Name="Comment" Type="System.String">holiday</Property>
+    <Property Name="Date" Type="System.DateTime">11/23/2017 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">112</Property>
+    <Property Name="Event" Type="System.String">PSTweetChat</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">12/1/2017 1:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">113</Property>
+    <Property Name="Event" Type="System.String">Christmas</Property>
+    <Property Name="Comment" Type="System.String">holiday</Property>
+    <Property Name="Date" Type="System.DateTime">12/25/2017 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">114</Property>
+    <Property Name="Event" Type="System.String">Dentist</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">12/28/2017 2:00:00 PM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">115</Property>
+    <Property Name="Event" Type="System.String">New Years Eve</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">12/31/2017 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">116</Property>
+    <Property Name="Event" Type="System.String">New Years Day</Property>
+    <Property Name="Comment" Type="System.String">holiday</Property>
+    <Property Name="Date" Type="System.DateTime">1/1/2018 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">117</Property>
+    <Property Name="Event" Type="System.String">MVP Summit</Property>
+    <Property Name="Comment" Type="System.String">Bellevue/Redmond</Property>
+    <Property Name="Date" Type="System.DateTime">3/4/2018 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">118</Property>
+    <Property Name="Event" Type="System.String">PowerShell + DevOps Summit</Property>
+    <Property Name="Comment" Type="System.String">
+    </Property>
+    <Property Name="Date" Type="System.DateTime">4/9/2018 12:00:00 AM</Property>
+  </Object>
+  <Object Type="System.Management.Automation.PSCustomObject">
+    <Property Name="ID" Type="System.Int32">119</Property>
+    <Property Name="Event" Type="System.String">Christmas</Property>
+    <Property Name="Comment" Type="System.String">holiday</Property>
+    <Property Name="Date" Type="System.DateTime">12/25/2018 12:00:00 AM</Property>
+  </Object>
+</Objects>
