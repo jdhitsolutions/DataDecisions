@@ -212,3 +212,15 @@ $in.save($fullpath)
 cat $fullpath -tail 7
 
 #endregion
+
+#region My database option
+
+#still under development
+#https://github.com/jdhitsolutions/myTickle
+import-module s:\mytickle -force
+get-command -Module mytickle
+# psedit S:\mytickle\myTickleFunctions.ps1
+
+Get-TickleEvent -days 10
+
+#endregion
