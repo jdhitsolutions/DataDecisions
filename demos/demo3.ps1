@@ -1,24 +1,24 @@
 #compare relative sizes
 
-get-ciminstance win32_process | Export-Clixml .\scratch.xml
+Get-CimInstance win32_process | Export-Clixml .\scratch.xml
 
-[xml]$doc = get-ciminstance win32_process | Convertto-xml
-$f = join-path -path (Convert-path .) -ChildPath scratch2.xml
+[xml]$doc = Get-CimInstance win32_process | ConvertTo-Xml
+$f = Join-Path -path (Convert-path .) -ChildPath scratch2.xml
 $doc.Save($f)
 
-get-ciminstance win32_process | ConvertTo-Json | Set-Content -Path .\scratch.json
-Get-CimInstance win32_process | export-csv -Path .\scratch.csv
+Get-CimInstance win32_process | ConvertTo-Json | Set-Content -Path .\scratch.json
+Get-CimInstance win32_process | Export-Csv -Path .\scratch.csv
 
-get-ciminstance win32_process | Out-File -FilePath .\scratch.txt
+Get-CimInstance win32_process | Out-File -FilePath .\scratch.txt
 
 Dir scratch* | sort length -Descending
 
 Import-Clixml .\scratch.xml | Select -first 5 -property Name 
 import-csv .\scratch.csv | select -first 5 -property Name 
 #converting from json is different
-get-content .\scratch.json | convertfrom-json | select -first 5 -property Name
-get-content .\scratch.json | convertfrom-json | get-member
-$j = get-content .\scratch.json | convertfrom-json 
+Get-Content .\scratch.json | ConvertFrom-Json | select -first 5 -property Name
+Get-Content .\scratch.json | ConvertFrom-Json | Get-Member
+$j = Get-Content .\scratch.json | ConvertFrom-Json 
 $j | select -first 5 -Property Name
 
 Get-Content .\scratch.txt
@@ -27,8 +27,8 @@ Get-Content .\scratch.txt
 #json is good
 $j[0] | Get-Member
 #probably the best
-Import-Clixml .\scratch.xml | Select -first 1 | get-member 
+Import-Clixml .\scratch.xml | Select -first 1 | Get-Member 
 #native XML also pretty good
 psedit $f
 #the worst
-import-csv .\scratch.csv | select -first 1 | get-member
+Import-Csv .\scratch.csv | select -first 1 | Get-Member

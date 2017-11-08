@@ -1,17 +1,18 @@
 #be careful with data files
 
-get-content .\names.txt
+Get-Content .\names.txt
 
-get-content .\names.txt | get-service
+Get-Content .\names.txt | Get-Service
 
 #skip blank lines
-get-content .\names.txt | where {$_ } | get-service
+Get-Content .\names.txt | where {$_ } | Get-Service
 
 #still need to trim
-(get-content .\names.txt | where {$_ }).foreach( {$_.trim()}) | get-service
+(Get-Content .\names.txt | where {$_ }).foreach( {$_.trim()}) | Get-Service
 
 #fine tune
-(get-content .\names.txt | where {$_ -match '\w+' }).foreach( {$_.trim()}) | get-service
+(Get-Content .\names.txt | 
+where {$_ -match '\w+' }).foreach( {$_.trim()}) | Get-Service
 
 Function Optimize-Text {
     [cmdletbinding()]
@@ -28,4 +29,4 @@ Function Optimize-Text {
     End {}
 }
 
-Get-content .\names.txt | Optimize-Text | Get-Service
+Get-Content .\names.txt | Optimize-Text | Get-Service

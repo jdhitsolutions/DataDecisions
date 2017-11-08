@@ -3,7 +3,7 @@
 dir data.*
 
 #region CSV
-import-csv .\data.csv
+Import-Csv .\data.csv
 
 Function Get-Tickle {
     [cmdletbinding(DefaultParameterSetName = "days")]
@@ -40,7 +40,7 @@ Function New-Tickle {
     )
 
     #import CSV to get last ID
-    [int32]$last = (import-csv -path $Path | Select -last 1).ID
+    [int32]$last = (Import-Csv -path $Path | Select -last 1).ID
     $last++
     $e = [pscustomobject]@{
         ID      = $last
@@ -54,11 +54,11 @@ Function New-Tickle {
 
 #Add an event
 get-tickle
-get-tickle | get-member
+get-tickle | Get-Member
 get-tickle -all
 new-tickle -Event "Something soon" -Date 4:00PM
 Get-Tickle
-get-content data.csv -tail 4
+Get-Content data.csv -tail 4
 
 #modify an event
 Function Set-Tickle {
@@ -85,7 +85,7 @@ Function Set-Tickle {
         $entry.date = $date
     }
     #update the csv file
-    $in | export-csv -Path $path -NoTypeInformation
+    $in | Export-Csv -Path $path -NoTypeInformation
     Get-Tickle -all | where id -eq $entry.ID
 }
 
@@ -126,7 +126,7 @@ Function Get-TickleXML {
     [xml]$In = Get-Content -Path $path -Encoding UTF8
 
     $events = foreach ($obj in $in.Objects.object) {
-        $obj.Property | foreach-object -begin {$hash = [ordered]@{}} -process {
+        $obj.Property | ForEach-Object -begin {$hash = [ordered]@{}} -process {
             #look at value and compare to a regex pattern to figure type
             
             #add the property to the hashtable
@@ -217,8 +217,8 @@ cat $fullpath -tail 7
 
 #still under development
 #https://github.com/jdhitsolutions/myTickle
-import-module s:\mytickle -force
-get-command -Module mytickle
+Import-Module s:\mytickle -force
+Get-Command -Module mytickle
 # psedit S:\mytickle\myTickleFunctions.ps1
 
 Get-TickleEvent -days 10
